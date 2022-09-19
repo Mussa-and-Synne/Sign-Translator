@@ -47,23 +47,24 @@ const LoginForm = () =>{
         }
 
         if(errors.username.type === 'required'){
-            return <span>Username is required!</span>
+            return <span className='error-msg'>Username is required!</span>
         }
 
         if(errors.username.type === 'minLength'){
-            return <span>Minimum length of 3 required!</span>
+            return <span className='error-msg'>Minimum length of 3 required!</span>
         }
     })()
     return(
         <>
-            <form onSubmit={ handleSubmit(onSubmit) }>
-                <fieldset>
-                    <input type="text" 
-                    placeholder='Whats your name?'
+            <form className='login-form' onSubmit={ handleSubmit(onSubmit) }>
+                <fieldset className='fieldset-login'>
+                    <input className='input-name' type="text" 
+                    placeholder='⌨️️ | Whats your name?'
                     {...register("username", usernameConfig)} />
+                    <button className='login-btn' type='submit' disabled={loading}>➜</button>
                 {errorMessage}
                 </fieldset>
-                <button type='submit' disabled={loading}>Log in</button>
+                
 
                 {loading && <p>Logging in...</p>}
                 {apiError && <p>{ apiError }</p>}

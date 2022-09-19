@@ -2,7 +2,10 @@ import LoginForm from "../components/Login/LoginForm"
 const Login = () =>{
     return(
         <>
-        <h1>Login</h1>
+        <header className="login-head">
+            <img src="" alt="" />
+            <h1>Get started!</h1>
+        </header>
         <LoginForm/>
         </>
     )
