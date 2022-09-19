@@ -11,7 +11,7 @@ export const createTranslation = async (user, translation) =>{
             })
         })
         if(!response.ok){
-            throw new Error('Could not update translations')
+            throw new Error('Could not create translation')
         }
         const data = await response.json()
         return [ null, data ]
