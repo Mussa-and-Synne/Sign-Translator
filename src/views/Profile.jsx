@@ -11,10 +11,13 @@ const Profile = () =>{
 
     return(
         <>
-            <h1>Profile</h1>
-            <ProfileHeader username = {user.username}/>
-            <ProfileTranslationHistory translations = {user.translations }/>
-            <ProfileActions/>
+            <div className="profile-all">
+                <div className="border-profile">
+                    <ProfileHeader username = {user.username}/>
+                    <ProfileTranslationHistory translations = {user.translations }/>
+                    <ProfileActions/>
+                </div>
+            </div>
         </>
     )
 }

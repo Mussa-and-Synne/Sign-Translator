@@ -1,22 +1,18 @@
 import { useForm } from "react-hook-form"
-import { createTranslation } from "../../api/translate"
-import { STORAGE_KEY_USER } from "../../const/storageKeys"
 
 const TranslationInput = ({onTranslation}) => {
     const {register, handleSubmit} = useForm()
     
     const onSubmit = ({translateInput}) => {
         onTranslation(translateInput)
-        console.log(translateInput)
     }
 
     return(
         <form onSubmit={handleSubmit(onSubmit)}>
-            <fieldset>
-                <label htmlFor="translate-input">Translate: </label>
-                <input type="text" {...register('translateInput')} placeholder="Translate here" />
+            <fieldset className="border-translate">
+                <input type="text" className="input-text" {...register('translateInput')} placeholder="⌨️️ | Hello" />
             </fieldset>
-            <button type="submit">Translate</button>
+            <button type="submit" className="translate-btn">➜</button>
         </form>
     )
 }
