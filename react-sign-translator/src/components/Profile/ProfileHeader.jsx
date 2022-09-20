@@ -1,6 +1,6 @@
 const ProfileHeader = ({ username }) => {
     return (
-        <p>{username}</p>
+        <p className="profile-head">You are logged in as {username}!</p>
     )
 }
 export default ProfileHeader

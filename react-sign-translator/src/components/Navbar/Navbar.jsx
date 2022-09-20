@@ -8,12 +8,12 @@ const Navbar = () =>{
         <nav>
             <h1>Lost in Translation</h1>
             { user !== null &&
-            <ul>
-                <li>
-                    <NavLink to="/translation">Translate</NavLink>
+            <ul className="header-list">
+                <li className="img-name">
+                    <NavLink to="/profile" className="profile-click-header header-clicks"> <img className="profile-pic" src="img/user.png" alt="profilepicture" width="90px" />{user.username}</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/profile">Profile</NavLink>
+                    <NavLink to="/translation" className="header-clicks">Translate</NavLink>
                 </li>
             </ul>
             }
