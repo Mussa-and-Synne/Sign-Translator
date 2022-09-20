@@ -1,13 +1,14 @@
 nav{
     background-color: rgb(255, 184, 52);
-    padding: 1%;
+    padding: 0.5%;
     color: white;
     font-family: Ink Free;
     font-size: 40px;    
     border-width: 2px;
-    border-bottom-width:20px;
+    border-bottom-width:10px;
     border-bottom-color:rgb(249, 179, 67);
     border-bottom-style: solid;
+    padding-left: 40px;
 }
 
 .input-name{
@@ -52,8 +53,8 @@ nav{
 .fieldset-login{
     align-items: center;
     width: 70%;
-    height: 400px;
-    top: 25%;
+    height: 300px;
+    top: 31%;
     left: 15%;
     position: fixed;
     -moz-border-radius:12px; 
@@ -63,10 +64,33 @@ nav{
     border-bottom-width:100px;
     border-bottom-color:rgb(148, 92, 148);
     border-bottom-style: solid;
+    background-color: white;
 }
 .login-head{
     background-color: rgb(255, 184, 52);
     color: white;
     font-family: Ink Free;
+    padding: 4%;
     
+}
+
+.logo-hello{
+    padding-top: -100px;
+    padding-left: 11%;
+    margin-top: -50px;
+}
+
+.login-text-h1{
+    position: fixed;
+    left: 33%;
+    top: 13%;
+    font-size: 100px;
+}
+
+.login-text-h2{
+    position: fixed;
+    left: 34%;
+    top: 22.5%;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
 }
