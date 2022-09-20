@@ -9,11 +9,10 @@ const TranslationInput = ({onTranslation}) => {
 
     return(
         <form onSubmit={handleSubmit(onSubmit)}>
-            <fieldset>
-                <label htmlFor="translate-input">Translate: </label>
-                <input type="text" {...register('translateInput')} placeholder="Translate here" />
+            <fieldset className="border-translate">
+                <input type="text" className="input-text" {...register('translateInput')} placeholder="⌨️️ | Hello" />
             </fieldset>
-            <button type="submit">Translate</button>
+            <button type="submit" className="translate-btn">➜</button>
         </form>
     )
 }
