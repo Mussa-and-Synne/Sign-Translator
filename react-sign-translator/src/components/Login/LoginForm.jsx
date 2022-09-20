@@ -22,7 +22,7 @@ const LoginForm = () =>{
     //Side effects
     useEffect(() => {
         if(user !==null){
-            navigate('profile')
+            navigate('translation')
         }
     }, [user, navigate]) //Empty means only run 1 time
 
